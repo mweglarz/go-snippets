@@ -1,0 +1,14 @@
+
+# test function with intro
+snippet test2
+abbr func TestXYZ(t *testing.T) { ... }
+	func Test${1:Function}(t *testing.T) {
+        fmt.Println("****** Starting test", "Test$1", "******")
+		${0}
+	}
+
+# printf
+snippet pf
+abbr printf("\n")
+    fmt.Printf("${1}\n", ${0})
+
